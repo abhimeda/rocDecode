@@ -23,4 +23,5 @@ steps:
     cmake ../
     make -j8
     sudo make install
+    make test
   displayName: 'Run a multi-line script'
