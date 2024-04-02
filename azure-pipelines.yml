@@ -14,11 +14,11 @@ steps:
   displayName: 'Run a one-line script'
 
 - script: |
-    echo "rocm" | sudo -S apt install libva-amdgpu-dev libdrm-amdgpu1 mesa-amdgpu-va-drivers
-    echo "rocm" | sudo -S apt install cmake
-    echo "rocm" | sudo -S apt install pkg-config
-    echo "rocm" | sudo -S apt install ffmpeg libavcodec-dev libavformat-dev libavutil-dev
-    echo "rocm" | sudo -S apt install libstdc++-12-dev
+    # echo "rocm" | sudo -S apt install libva-amdgpu-dev libdrm-amdgpu1 mesa-amdgpu-va-drivers
+    # echo "rocm" | sudo -S apt install cmake
+    # echo "rocm" | sudo -S apt install pkg-config
+    # echo "rocm" | sudo -S apt install ffmpeg libavcodec-dev libavformat-dev libavutil-dev
+    # echo "rocm" | sudo -S apt install libstdc++-12-dev
     echo "rocm" | sudo -S python3 rocDecode-setup.py
     mkdir build && cd build
     cmake ../
